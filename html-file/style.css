@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+
+*{
+    font-family: "Koh Santepheap", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: rgb(248, 190, 115);
+}
+.content{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    overflow: hidden;
+    background-color: #fe4af9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.content h1{
+    float: left;
+    margin: left 10%;
+    color: #f2f6f1; 
+}
+.content ul{
+    list-style: none;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 1rem;
+    padding-top: 1rem;
+    
+}
+.content a{
+  text-decoration: none; 
+  color: #f2f6f1; 
+}
+.current a::after{
+  content: '_';  
+  background-color: #f2f6f1;
+  font-size: 0.1rem;
+  display: block;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 82%  18%;
+}
+.equation{
+  font-size: 2rem;  
+  background-color: #f2f6f1;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 10%;
+  margin-left:0.5rem ;
+  margin-right:0.5rem ;
+  margin-top: 0.5rem;
+  
+
+}
+.equation h1{
+    display: inline;
+   padding: 1rem;
+}
+.equation i{
+    padding: 1rem ;
+    font-size: 3rem;
+    
+}
+.answer-options{
+  font-size: 2rem; 
+  margin-right:2rem ; 
+
+}
+.answer-options h1{
+    width: 100%;
+    cursor: pointer ;
+    color:#f2f6f1;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: center;   
+}
+.option1{
+    background-color:#fe4af9 ;
+}
+.option1:hover{
+color: #fe4af9;
+background-color: #f2f6f1;
+}
+
+.option2{
+    background-color:#2abc ;
+
+}
+.option2:hover{
+color: #2abc;
+background-color: #f2f6f1;
+}
+
+.option3{
+    background-color:#fed76f; ;
+
+}
+.option3:hover{
+color: #fed76f;
+background-color: #f2f6f1;
+}
+
+
+
+/* responsiveness */
+@media screen and (max-width:480px){
+
+    .content h1{
+        float: left;
+        margin: left 4%;
+        color: #f2f6f1; 
+        font-size: 1rem;
+    }
+    .content ul{
+        list-style: none;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        column-gap: 0.8rem;
+        padding-top: 0.8rem;
+        
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 82%  18%;
+    }
+    .equation{
+      font-size: 2rem;  
+      background-color: #f2f6f1;
+      border-radius: 0.5rem;
+      text-align: center;
+      padding-top: 10%;
+      margin-left:0.4rem ;
+      margin-right:0.4rem ;
+      margin-top: 0.4rem;
+      
+    
+    }
+    .equation h1{
+        display: inline;
+       padding: 0.5rem;
+    }
+    .equation i{
+        padding: 0.8rem ;
+        font-size: 2.9rem;
+        
+    }
+    .answer-options{
+      font-size: 1rem; 
+      margin-right:1rem ; 
+      width: 100%;
+    
+    }
+    .answer-options h1{
+        width: 100%;
+        padding: 1rem;
+        cursor: pointer ;
+        color:#f2f6f1;
+        border-radius: 0.4rem;
+        margin-top: 0.4rem;
+        text-align: center;   
+    }
+}
